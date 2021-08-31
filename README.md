@@ -60,7 +60,3 @@ Para contribuir com <Piedpiper 2.0>, siga estas etapas:
   </tr>
 </table>
 -->
-
-## 📝 Licença
-
-[⬆ Voltar ao topo](#Site da Pied Piper)<br>
