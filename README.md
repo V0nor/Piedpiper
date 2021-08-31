@@ -1,7 +1,7 @@
 # Site da Pied Piper
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/V0nor/v0nor.github.io?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/V0nor/v0nor.github.io?style=for-the-badge)
 
 ![foto2](https://user-images.githubusercontent.com/88126005/131552088-a15186ed-1687-4836-8f78-e7b1c3abcb17.png)
 ![foto4](https://user-images.githubusercontent.com/88126005/131552215-e1a4293a-6fa4-48bd-9bbf-4d525207db5e.png)
