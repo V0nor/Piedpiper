@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: Gilroy;
+    font-family: Gilroy sans-serif;
 }
 
 header {
@@ -34,7 +34,7 @@ header {
     transform: translateY(-120%)
 }
 
-ul {
+.nav-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -43,7 +43,9 @@ ul {
     font-family: Gilroy;
 }
 
-li {
+.internet,
+.about,
+.contact {
     float: left;
 }
 
@@ -55,7 +57,9 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.internet:hover,
+.about:hover,
+.contact:hover {
     color: rgb(104, 209, 151);
     transform: translateY(2px);
     transition: 0.2s;
@@ -63,7 +67,9 @@ li a:hover {
     transform: translateX(-2px);
 }
 
-li a:active {
+.internet:active,
+.about:active,
+.contact:active {
     transform: translateX(2px);
 }
 
@@ -82,14 +88,27 @@ li a:active {
 .title {
     font-family: Gilroy;
     text-align: center;
-    color: #f5f5f5e5;
+    color: #f5f5f5;
     margin-top: 30px;
     font-size: 52px;
+    font-weight: normal;
     transition: 0.6s ease-in-out;
 }
 
 .title:hover {
-    transform: translateY(-7px)
+    transform: translateY(-7px);
+    transition: 0.6s ease;
+}
+
+.description {
+    color: #FFFFFFBB;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    font-family: Gilroy;
+    padding: 0;
+    margin: 0;
+    transition: 0.6s ease;
 }
 
 .bold {
@@ -99,4 +118,142 @@ li a:active {
 
 .trademark {
     font-size: 24px;
+}
+
+.season-list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Gilroy;
+}
+
+.temp {
+    padding-bottom: 30px;
+    transition: 0.6s ease;
+}
+
+.temp:hover {
+    color: green;
+}
+
+.season:hover {
+    color: green;
+}
+
+#foto-season1 {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    height: 550px;
+}
+
+#code-season1 {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    height: 550px;
+}
+
+.bg-season1 {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: black;
+    font-family: Gilroy;
+    display: block;
+}
+
+.title-season1 {
+    color: black;
+    text-align: center;
+    font-family: Gilroy;
+}
+
+.sub-title-season1 {
+    font-family: Gilroy;
+    color: black;
+    padding-left: 120px;
+    font-size: 14px;
+}
+
+.trademark2 {
+    font-size: 14px;
+}
+
+.title-tech {
+    color: black;
+    font-family: Gilroy;
+}
+
+.sub-title-tech {
+    display: flex;
+    color: black;
+    font-family: Gilroy;
+    font-size: 14px;
+}
+
+#tech {
+    display: flex;
+    width: 15%;
+    float: left;
+    padding-top: 27px;
+    padding-right: 22px;
+    padding-left: 50px;
+}
+
+#fim-season1 {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    height: 600px;
+}
+
+.title-elenco {
+    color: black;
+    font-family: Gilroy;
+    text-align: center;
+}
+
+#richard,
+#erlich,
+#dinesh,
+#gilfoyle,
+#jared {
+    display: flex;
+    width: 10%;
+    padding-left: 35px;
+}
+
+.title-richard {
+    font-family: gilroy;
+    color: black;
+}
+
+.sub-title-richard {
+    color: black;
+    font-family: Gilroy;
+}
+
+.footer-bg {
+    background-color: #fff;
+}
+
+#facebook,
+#twitter,
+#instagram {
+    display: flex;
+    width: 5%;
+}
+
+.social-links a {
+    position: relative;
+    float: left;
+    width: 892px;
+    margin: 0 13px;
+}
+
+a {
+    transition: 0.6s ease;
 }
