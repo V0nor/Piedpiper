@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family: anonymous pro;
+    font-family: Gilroy;
 }
 
 header {
@@ -40,7 +40,7 @@ ul {
     padding: 0;
     overflow: hidden;
     float: right;
-    font-family: anonymous pro;
+    font-family: Gilroy;
 }
 
 li {
@@ -80,7 +80,7 @@ li a:active {
 }
 
 .title {
-    font-family: anonymous pro;
+    font-family: Gilroy;
     text-align: center;
     color: #f5f5f5e5;
     margin-top: 30px;
