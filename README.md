@@ -3,9 +3,10 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/V0nor/v0nor.github.io?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/V0nor/v0nor.github.io?style=for-the-badge)
 
-![foto2](https://user-images.githubusercontent.com/88126005/131552088-a15186ed-1687-4836-8f78-e7b1c3abcb17.png)
-![foto4](https://user-images.githubusercontent.com/88126005/131552215-e1a4293a-6fa4-48bd-9bbf-4d525207db5e.png)
-![foto2](https://user-images.githubusercontent.com/88126005/131552185-beb714f6-f63f-48fd-8779-aa416e6bf4c8.png)
+![pagina-inicial](https://user-images.githubusercontent.com/88126005/133693094-dab9c921-8253-4e53-8910-08fe850feec0.png)<br><br><br>
+![info](https://user-images.githubusercontent.com/88126005/133693073-089c0f10-5c83-4a50-a202-cfc6e15ae0d6.png)<br><br><br>
+![tripulacao](https://user-images.githubusercontent.com/88126005/133693114-9ed4039f-e8c5-4446-83b7-8c3ec0ac52c1.png)<br><br><br>
+![sobre](https://user-images.githubusercontent.com/88126005/133693122-8108bb51-d69a-4cd4-854e-c59f4a7d1143.png)<br><br><br>
 
 > A recriação ao meu gosto do Famoso site http://www.piedpiper.com/ da série Silicon Valley
 
