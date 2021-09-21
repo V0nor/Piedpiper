@@ -3,14 +3,27 @@ var container = document.querySelector('.bg-season1');
 
 btn.addEventListener('click', function() {
 
-    if (container.style.display === 'none') {} else {
-        container.style.display = 'block';
-    }
-    $('html, body').animate({
-        scrollTop: targetOffset - 100
-    }, 500);
-});
+    var transition, t;
+    clearInterval(transition);
 
-function onOver(section) {
-    elemento.style.backgroundColor = 'red';
-}
+    if (container.style.display == 'none') {
+        container.style.opacity = "0";
+        container.style.display = "block";
+        var x = .1;
+    } else {
+        var x = .9;
+        t = true;
+
+    }
+
+    transition = setInterval(function() {
+        container.style.opacity = x;
+        x += t ? -.1 : .1;
+        if ((x >= 1 && !t) || (x <= 0 && t)) {
+            clearInterval(transition);
+            if (x <= 0) container.style.display = 'none';
+        }
+    }, 50);
+
+
+});
