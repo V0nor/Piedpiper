@@ -3,6 +3,7 @@
 :root {
     --primary-color: #56d7b6;
     --secundary-color: #fff;
+    --terciary-color:#00ACD5;
 }
 
 body {
@@ -39,7 +40,6 @@ header::after {
     height: 100%;
     z-index: 1;
     background-color: #56d7b6;
-    /* background-image: linear-gradient(to bottom, #4FB8E3 0%, #53ED9B 90%); */
     background-image: linear-gradient(to bottom, #56D7B6 0%, #00ACD5 90%);
 }
 
