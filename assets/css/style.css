@@ -1,8 +1,15 @@
+/** @format */
+
+:root {
+    --primary-color: #56d7b6;
+    --secundary-color: #fff;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy' sans-serif;
+    font-family: 'Gilroy';
 }
 
 a {
@@ -14,22 +21,42 @@ a {
 ul,
 li {
     list-style: none;
-    font-family: 'Gilroy';
+}
+
+header {
+    position: relative;
+    background-color: #1a1a1a;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='368' height='368' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2356D7B6' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2356D7B6'%3E%3Ccircle cx='769' cy='229' r='8'/%3E%3Ccircle cx='539' cy='269' r='8'/%3E%3Ccircle cx='603' cy='493' r='8'/%3E%3Ccircle cx='731' cy='737' r='8'/%3E%3Ccircle cx='520' cy='660' r='8'/%3E%3Ccircle cx='309' cy='538' r='8'/%3E%3Ccircle cx='295' cy='764' r='8'/%3E%3Ccircle cx='40' cy='599' r='8'/%3E%3Ccircle cx='102' cy='382' r='8'/%3E%3Ccircle cx='127' cy='80' r='8'/%3E%3Ccircle cx='370' cy='105' r='8'/%3E%3Ccircle cx='578' cy='42' r='8'/%3E%3Ccircle cx='237' cy='261' r='8'/%3E%3Ccircle cx='390' cy='382' r='8'/%3E%3C/g%3E%3C/svg%3E");
+    height: 700px;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #56d7b6;
+    /* background-image: linear-gradient(to bottom, #4FB8E3 0%, #53ED9B 90%); */
+    background-image: linear-gradient(to bottom, #56D7B6 0%, #00ACD5 90%);
 }
 
 .navbar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 80px;
-    background-color: #56D7B6; 
+    height: 140px;
+    z-index: 2;
 }
 
 .logo__img {
-    width: 70px;
+    width: 100px;
     height: auto;
-    fill:#204F43;
+    fill: var(--secundary-color);
 }
 
 .navbar__links {
@@ -42,8 +69,8 @@ li {
     padding: 6px 25px;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #204F43;
-    transition: all .4s cubic-bezier(0.19, 1, 0.22, 1); 
+    color: var(--secundary-color);
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .navbar__link::after {
@@ -53,102 +80,66 @@ li {
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: #204F43;
+    background-color: var(--secundary-color);
     transform: scaleX(0);
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .navbar__link:hover {
-    background: #204f431a;
+    background-color: #03030386;
+    border-radius: 20px;
 }
 
-.navbar__link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.internet {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    z-index: 2;
 }
 
-/* .internet:hover,
-.about:hover,
-.contact:hover {
-    color: rgb(104, 209, 151);
-    transform: translateY(2px);
-    transition: 0.2s;
-    border-top: solid 1px rgba(52, 226, 104, 0.918);
-    background-color: rgb(21, 206, 160, 0.918);
-    transition: 0.4s ease-in-out;
-} */
-
-/* 
-.bg_video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-    background-size: cover;
-} */
-
-.title {
-    font-family: Gilroy;
+.internet__title {
+    margin: 80px 0 10px;
+    max-width: 700px;
     text-align: center;
-    color: #f5f5f5;
-    margin-top: 30px;
-    font-size: 52px;
-    font-weight: normal;
-    transition: 0.6s ease-in-out;
+    line-height: 1;
+    font-size: 3.25rem;
+    color: #fff;
+    font-weight: 800;
 }
 
 .description {
+    max-width: 500px;
     color: #ffffffbb;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 1.25rem;
     text-align: center;
     font-family: Gilroy;
     padding: 0;
     margin: 0;
 }
 
-.bold {
-    font-weight: bold;
+.internet__btn {
+    margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 1.25rem;
     color: #fff;
-}
-
-.trademark {
-    font-size: 24px;
-}
-
-#btn {
-    display: inline-block;
-    font-family: gilroy;
-    background-color: rgba(21, 206, 160, 0.096);
-    border: 1px solid rgba(241, 241, 241, 0.26);
-    box-shadow: 0px 1px 7px rgb(104, 209, 151 0.868);
-    max-width: 220px;
-    padding-left: 12px;
-    margin: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transform: translate(1px);
-    transition: 0.9s ease-in-out;
-    border-radius: 22px;
     cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border: 2px solid #f1f1f142;
+    border-radius: 20px;
 }
 
-#btn:hover {
-    transform: translate(2px);
-    transition: 0.9s ease-in-out;
-    color: rgb(17, 235, 144);
-    border: 1px solid rgb(17, 235, 144);
-    transition: 0.7s ease-in-out;
+.internet__btn:hover {
+    transform: scale(0.98);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-#btn:active {
-    background-color: #121212;
-    transform: translate(1px, 3px);
-    transition: 0.1s ease-in-out;
+.internet__btn:active {
+    background-color: #242424;
+    transform: scale(1);
+    transition: none;
 }
 
 .season-list {
@@ -214,13 +205,13 @@ li {
 }
 
 .bg-season1 {
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+    display: none;
     color: black;
     font-family: Gilroy;
-    display: none;
+}
+
+.bg-season1.active {
+    display: block;
 }
 
 .title-season1 {
@@ -242,8 +233,6 @@ li {
 
 #tech {
     display: flex;
-    width: 15%;
-    float: left;
     padding-top: 27px;
     padding-right: 22px;
     padding-left: 50px;
@@ -252,7 +241,6 @@ li {
 #fim-season1 {
     display: flex;
     margin: auto;
-    width: 95%;
     height: 600px;
 }
 
