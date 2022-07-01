@@ -1,6 +1,9 @@
-const btn = document.querySelector('.internet__btn');
-const container = document.querySelector('.bg-season1');
-btn.addEventListener('click', () => {
-    container.classList.toggle('active');
+const menuMobile = document.querySelector('.navbar__toggle');
+const navbarLinks = document.querySelector('.navbar__links');
 
-})
+const header = document.querySelector('.header');
+
+menuMobile.addEventListener('click', () => {
+    navbarLinks.classList.toggle('show__links');;
+    menuMobile.classList.toggle('active');
+});
